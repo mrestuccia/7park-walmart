@@ -1,4 +1,4 @@
-# 7park Walmart
+# 7Park Data - Walmart
 
 # loaddata.py
 Does a reverse engineer to get the stores related to zipcodes.
