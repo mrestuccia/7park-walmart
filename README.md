@@ -1,6 +1,6 @@
 # 7Park Data - Walmart
 
-# loaddata.py
+## loaddata.py
 Does a reverse engineer to get the stores related to zipcodes.
 - For each zipcode based on the US postal service list
   - Get all the nearby stores and create a dictionary (key=store, value=zip).
@@ -14,7 +14,7 @@ Requeriments:
 - You need a Walmart api key save in a file config.py (not uploaded for security)
 
 
-# readdata.py
+## readdata.py
 Function that returns the zipcode of a given store id.
 
 Requirements:
@@ -24,3 +24,8 @@ Requirements:
 
 Ex: 
 https://ewn7lusnh8.execute-api.us-east-1.amazonaws.com/PROD/?no=994
+
+
+
+
+![ETL Event driven](/ETL Event driven.pdf)
