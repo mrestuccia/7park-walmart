@@ -40,6 +40,7 @@ https://ewn7lusnh8.execute-api.us-east-1.amazonaws.com/PROD/?no=994
 
 Notes: 
 - Perhaps other elements are present in the AWS Glue piece such as a DynamoDB with zipcode, etc. They are left out of the diagram because this is a generic solution.
+- AWS Glue is a fully managed, scale-out Apache Spark environment. It's serverless from our point of view. 
 
 
 ### Diagram
