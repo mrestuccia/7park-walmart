@@ -33,8 +33,8 @@ https://ewn7lusnh8.execute-api.us-east-1.amazonaws.com/PROD/?no=994
 
 ###Overall idea
 - AWS Lambda function is triggered when file is saved into S3. 
-- The lamda function will indentify in the AWS Glue Metadata catalog what type of transformation is.
-- The lambda function will trigger the right ETL job.
+- The Lambda function will indentify in the AWS Glue Metadata catalog what type of transformation is.
+- The Lambda function will trigger the right ETL job.
 - The ETL job is written in pyhon and it will enrich the file.
 - Results will be saved in Redshift.
 
