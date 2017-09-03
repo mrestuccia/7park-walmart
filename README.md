@@ -1,6 +1,9 @@
 # 7Park Data - Walmart
 
-## loaddata.py
+## Task2
+
+
+### loaddata.py
 Does a reverse engineer to get the stores related to zipcodes.
 - For each zipcode based on the US postal service list
   - Get all the nearby stores and create a dictionary (key=store, value=zip).
@@ -14,7 +17,7 @@ Requeriments:
 - You need a Walmart api key save in a file config.py (not uploaded for security)
 
 
-## readdata.py
+### readdata.py
 Function that returns the zipcode of a given store id.
 
 Requirements:
@@ -26,6 +29,19 @@ Ex:
 https://ewn7lusnh8.execute-api.us-east-1.amazonaws.com/PROD/?no=994
 
 
+## Task 1
+
+###Overall idea
+- AWS Lambda function is triggered when file is saved into S3. 
+- The lamda function will indentify in the AWS Glue Metadata catalog what type of transformation is.
+- The lambda function will trigger the right ETL job.
+- The ETL job is written in pyhon and it will enrich the file.
+- Results will be saved in Redshift.
+
+Notes: 
+- Perhaps other elements are present in the AWS Glue piece such as a DynamoDB with zipcode, etc. They are left out of the diagram because this is a generic solution.
 
 
+### Diagram
+ 
 ![ETL Event driven](/ETLEventDriven.png)
